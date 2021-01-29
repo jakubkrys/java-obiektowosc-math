@@ -9,17 +9,11 @@ public class MathExample {
         int size = scanner.nextInt();
         scanner.nextLine();
 
-        double[] numbers = new double[size];
-
-        /* wyświetlenie
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println(numbers[i]);
-        }*/
-
+        NumberRepo numberRepo = new NumberRepo(size);
+        
         // losowanie i wyświetlenie
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = Math.random();
-            System.out.println(numbers[i]);
-        }
+
+        numberRepo.generateValues();
+        numberRepo.displayAll();
     }
 }
