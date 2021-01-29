@@ -16,4 +16,20 @@ public class NumberRepo {
         }
 
     }
+
+    double findMin(){
+        double min = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            min = Math.min(min,numbers[i]);
+        }
+        return min;
+    }
+
+    double findMax(){
+        double max = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            max = Math.max(max,numbers[i]);
+        }
+        return max;
+    }
 }

@@ -10,10 +10,14 @@ public class MathExample {
         scanner.nextLine();
 
         NumberRepo numberRepo = new NumberRepo(size);
-        
+
         // losowanie i wyświetlenie
 
         numberRepo.generateValues();
         numberRepo.displayAll();
+        double min = numberRepo.findMin();
+        System.out.println("Min: "+min);
+        double max = numberRepo.findMax();
+        System.out.println("Max: "+max);
     }
 }
