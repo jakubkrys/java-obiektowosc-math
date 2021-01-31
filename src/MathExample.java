@@ -19,5 +19,11 @@ public class MathExample {
         System.out.println("Min: "+min);
         double max = numberRepo.findMax();
         System.out.println("Max: "+max);
+
+        double[] logNumbers = numberRepo.logNumbers();
+        System.out.println("Log numbers: ");
+        for (double number : logNumbers) {
+            System.out.println(number);
+        }
     }
 }
