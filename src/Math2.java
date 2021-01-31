@@ -35,8 +35,8 @@ public class Math2 {
         System.out.println("Max: "+max);
         System.out.println();
 
-        double a = Math.random() * ((max - min + 1) + min);
-        double b = Math.random() * ((max - min + 1) + min);
+        double a = (Math.random() * (max - min) + min);
+        double b = (Math.random() * (max - min) + min);
 
         System.out.println("a: "+a);
         System.out.println("b: "+b);
